@@ -11,6 +11,8 @@
     <modules>
         <module>Spring-IoC-Trainings</module>
         <module>Spring-IoC-Robot</module>
+        <module>Spring-IoC-Action-Examples</module>
+        <module>Spring-IoC-Action-Magician</module>
     </modules>
 
     <properties>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="duke" class="stage.performers.Juggler">
+        <constructor-arg value="15"/>
+    </bean>
+
+    <bean id="poeticDuke" class="stage.performers.PoeticJuggler">
+        <constructor-arg value="15"/>
+        <constructor-arg ref="sonnet29"/>
+    </bean>
+
+    <bean id="baseSaxophonist" class="stage.performers.Instrumentalist" abstract="true">
+        <property name="instrument" ref="saxophone"/>
+        <property name="song" value="Jingle Bells"/>
+    </bean>
+
+    <bean id="basePerformer" abstract="true">
+        <property name="song" value="Somewhere Over the Rainbow"/>
+    </bean>
+
+    <bean id="kenny" class="stage.performers.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument" ref="saxophone"/>
+    </bean>
+
+    <bean id="david" parent="baseSaxophonist"/>
+    <bean id="frank" parent="baseSaxophonist">
+        <property name="song" value="Mary had a little lamb"/>
+    </bean>
+
+    <bean id="taylor" class="stage.performers.Instrumentalist" parent="basePerformer">
+        <property name="instrument" ref="piano"/>
+    </bean>
+
+    <bean id="hank" class="stage.performers.OneManBand" abstract="false">
+        <property name="song" value="#{kenny.song}"/>
+        <property name="instruments">
+            <list>
+                <ref bean="saxophone"/>
+                <ref bean="piano"/>
+                <!--<null/>-->
+            </list>
+        </property>
+    </bean>
+
+    <bean id="saxophone" class="stage.instruments.Saxophone"/>
+
+    <bean id="piano" class="stage.instruments.Piano"/>
+
+    <bean id="stage" class="stage.building.Stage" factory-method="getInstance"/>
+
+    <bean id="auditorium" class="stage.building.Auditorium" init-method="turnOnLight" destroy-method="turnOffLight"/>
+
+    <bean id="ticket" class="stage.building.Ticket" scope="prototype"/>
+
+    <bean id="sonnet29" class="stage.poems.Sonnet29"/>
+
+</beans>

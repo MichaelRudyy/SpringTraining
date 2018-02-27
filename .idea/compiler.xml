@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring-IoC-Action-Examples" />
+        <module name="Spring-IoC-Action-Magician" />
         <module name="Spring-IoC-Robot" />
         <module name="Spring-IoC-Trainings" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Spring-IoC-Action-Examples" target="1.8" />
+      <module name="Spring-IoC-Action-Magician" target="1.8" />
       <module name="Spring-IoC-Robot" target="1.8" />
       <module name="Spring-IoC-Trainings" target="1.8" />
       <module name="SpringTraining" target="1.8" />
