@@ -12,6 +12,14 @@
         <replaced-method name="getContents" replacer="tigerReplacer"/>
     </bean>
 
+    <bean id="stevie" class="read_method_inject.Instrumentalist">
+        <lookup-method name="getMagician" bean="harry"/>
+        <property name="song" value="GreensLeeves"/>
+    </bean>
+
+    <bean id="harryr" abstract="true">
+    </bean>
+
     <bean id="tigerReplacer" class="method_inject.TigerReplacer"/>
 
 </beans>
