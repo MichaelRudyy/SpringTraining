@@ -1,0 +1,5 @@
+Приклад демонструє процес заміни методу біна на інший за допомогою Method Replacer
+Називається cе чудо Method Injection
+
+replace method - заменяєт метод
+look-up method - Смотрит на метод
