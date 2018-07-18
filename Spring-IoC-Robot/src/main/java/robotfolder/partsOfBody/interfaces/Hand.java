@@ -1,8 +1,8 @@
-package robot.partsOfBody.interfaces;
+package robotfolder.partsOfBody.interfaces;
 
 /**
  * Created by Michael Rudyy on 22-Jun-17.
  */
-public interface Head {
+public interface Hand {
     void action();
 }

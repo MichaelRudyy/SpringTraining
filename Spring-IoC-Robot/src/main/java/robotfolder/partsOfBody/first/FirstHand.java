@@ -1,6 +1,6 @@
-package robot.partsOfBody.first;
+package robotfolder.partsOfBody.first;
 
-import robot.partsOfBody.interfaces.Hand;
+import robotfolder.partsOfBody.interfaces.Hand;
 import org.springframework.stereotype.Component;
 
 /**

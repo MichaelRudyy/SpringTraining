@@ -1,8 +1,9 @@
-package robot;
+package robotfolder;
 
-import robot.partsOfBody.interfaces.Hand;
-import robot.partsOfBody.interfaces.Head;
-import robot.partsOfBody.interfaces.Leg;
+import org.springframework.context.annotation.ComponentScan;
+import robotfolder.partsOfBody.interfaces.Hand;
+import robotfolder.partsOfBody.interfaces.Head;
+import robotfolder.partsOfBody.interfaces.Leg;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -25,7 +26,7 @@ public class RobotConfiguration implements BeanPostProcessor,InitializingBean,Di
 
     @Bean
     @Autowired
-    Robot robot(@Qualifier("firstHead") Head head,
+    Robot robotFSF(@Qualifier("firstHead") Head head,
                 @Qualifier("secondHand") Hand hand,
                 @Qualifier("firstLeg") Leg leg) {
         return new Robot(head, hand, leg);
@@ -33,7 +34,7 @@ public class RobotConfiguration implements BeanPostProcessor,InitializingBean,Di
 
     @PostConstruct
     void init() {
-        System.out.println(" robot created");
+        System.out.println(" robotConfiguration created");
     }
 
 

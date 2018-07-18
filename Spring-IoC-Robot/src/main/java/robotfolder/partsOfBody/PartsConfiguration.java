@@ -1,11 +1,11 @@
-package robot.partsOfBody;
+package robotfolder.partsOfBody;
 
-import robot.partsOfBody.first.FirstHand;
-import robot.partsOfBody.first.FirstHead;
-import robot.partsOfBody.first.FirstLeg;
-import robot.partsOfBody.second.SecondHand;
-import robot.partsOfBody.second.SecondHead;
-import robot.partsOfBody.second.SecondLeg;
+import robotfolder.partsOfBody.first.FirstHand;
+import robotfolder.partsOfBody.first.FirstHead;
+import robotfolder.partsOfBody.first.FirstLeg;
+import robotfolder.partsOfBody.second.SecondHand;
+import robotfolder.partsOfBody.second.SecondHead;
+import robotfolder.partsOfBody.second.SecondLeg;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;

@@ -13,6 +13,7 @@
         <module>Spring-IoC-Robot</module>
         <module>Spring-IoC-Action-Examples</module>
         <module>Spring-IoC-Action-Magician</module>
+        <module>1-Knights</module>
     </modules>
 
     <properties>

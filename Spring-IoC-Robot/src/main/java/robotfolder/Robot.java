@@ -1,13 +1,15 @@
-package robot;
+package robotfolder;
 
-import robot.partsOfBody.interfaces.Hand;
-import robot.partsOfBody.interfaces.Head;
-import robot.partsOfBody.interfaces.Leg;
+import org.springframework.stereotype.Component;
+import robotfolder.partsOfBody.interfaces.Hand;
+import robotfolder.partsOfBody.interfaces.Head;
+import robotfolder.partsOfBody.interfaces.Leg;
 
 /**
  * Created by Michael Rudyy on 22-Jun-17.
  */
 
+//@Component
 public class Robot {
     //@Autowired
     //@Qualifier("firstHead")
