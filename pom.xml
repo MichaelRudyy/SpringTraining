@@ -14,6 +14,7 @@
         <module>Spring-IoC-Action-Examples</module>
         <module>Spring-IoC-Action-Magician</module>
         <module>1-Knights</module>
+        <module>1-Exampe-Of-Bean-Declaration</module>
     </modules>
 
     <properties>
