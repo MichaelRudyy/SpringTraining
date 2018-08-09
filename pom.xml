@@ -16,6 +16,7 @@
         <module>1-Knights</module>
         <module>1-Exampe-Of-Bean-Declaration</module>
         <module>3-Profile</module>
+        <module>4-Aspects</module>
     </modules>
 
     <properties>
